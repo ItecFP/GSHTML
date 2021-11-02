@@ -39,12 +39,16 @@ section {
     margin: 2% 10% 0% 18%;
 }
 
-nav ul {
+nav {
     position: fixed;
     width: 15%;
-    height: 100%;
+    height: 88%;
     overflow: auto;
     background-color: rgb(40, 40, 50);
+}
+
+nav ul {
+    display: block;
 }
 
 nav ul li a {
