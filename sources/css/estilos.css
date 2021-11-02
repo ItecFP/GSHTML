@@ -22,11 +22,11 @@ header {
 }
 
 header a {
+    margin: 20px;
     line-height: 0;
 }
 
 header a img {
-    margin: 20px;
     width: 75px;
     height: 75px;
 }
