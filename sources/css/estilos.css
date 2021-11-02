@@ -1,5 +1,6 @@
 /* GENERAL */
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -17,7 +18,6 @@ header {
     flex-wrap: wrap;
     width: 100%;
     align-items: center;
-    justify-content: left;
     background-color: rgb(60, 60, 70);
 }
 
@@ -35,32 +35,56 @@ header h1 {
     margin: 20px;
 }
 
-section {
-    margin: 2% 10% 0% 18%;
-}
-
-nav {
+.menu {
     position: fixed;
     width: 15%;
     height: 88%;
     overflow: auto;
+    transition: all linear 0.2s;
     background-color: rgb(40, 40, 50);
 }
 
-nav ul {
-    display: block;
+.menu-fixed {
+    top: 0;
+    height: 100%;
 }
 
-nav ul li a {
+.menu ul {
+    display: block;
+    width: 99%;
+}
+
+.menu ul hr {
+    width: 99%;
+    background-color: #dddddd;
+}
+
+.menu ul li a {
     display: block;
     padding: 8px 0px 8px 16px;
 }
 
-nav ul li a#active {
+.menu ul li a#active {
     background-color: rgb(60, 60, 70);
 }
 
-nav ul li a:hover:not(#active) {
+.menu ul li a:hover:not(#active) {
     background-color: rgb(60, 60, 70);
+}
+
+section {
+    margin: 2% 4% 0% 18%;
+}
+
+section h1 {
+    display: block;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+section p {
+    display: block;
+    margin-bottom: 10px;
+    text-align: justify;
 }
 /* GENERAL */
