@@ -51,11 +51,11 @@ header h1 {
 
 .menu ul {
     display: block;
-    width: 99%;
+    width: 100%;
 }
 
 .menu ul hr {
-    width: 99%;
+    width: 100%;
     background-color: #dddddd;
 }
 
