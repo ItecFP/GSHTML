@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 
-<html lang="es"> <!--coment-->
+<html lang="es">
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta http-equiv="content-security-policy" content="default-scr 'self'; style-src 'self'; script-src 'self';">
+        <meta http-equiv="content-security-policy" content="default-scr 'self' https://cdn.jsdelivr.net/*; style-src 'self'; script-src 'self' https://cdn.jsdelivr.net/* https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js;">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="author" content="Pozo, Alberto Sánchez">
+        <meta name="author" content="David Pozo, Alberto Sánchez">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+        <script src="./sources/js/scripts.js"></script>
         <link rel="stylesheet" href="./sources/css/estilos.css">
         <link rel="icon" href="./sources/img/icon.png">
-        <title>&lt;&gt; HTML</title>
+        <title>Guia Suprema de HTML</title>
     </head>
 
     <body>
@@ -18,9 +20,10 @@
             <h1>Guia Suprema de HTML</h1>
         </header>
 
-        <nav>
+        <nav class="menu">
             <ul>
-                <li><a id="active" href="#">HTML</a></li>
+                <li><a id="active" href="./index.html">Inicio</a></li>
+                <hr>
                 <li><a href="#">HTML</a></li>
                 <li><a href="#">HTML</a></li>
                 <li><a href="#">HTML</a></li>
