@@ -26,7 +26,7 @@
                 <hr>
                 <li><a href=./comments.html>&lt;!-- --&gt;</a></li>
                 <li><a href=./doctype.html>&lt;!DOCTYPE&gt;</a></li>
-                <li><a href=./a.html>&lt;a&gt;</a></li>
+                <li><a id="active" href=./a.html>&lt;a&gt;</a></li>
                 <li><a href=./abbr.html>&lt;abbr&gt;</a></li>
                 <li><a href=./address.html>&lt;address&gt;</a></li>
                 <li><a href=./area.html>&lt;area&gt;</a></li>
@@ -133,6 +133,7 @@
 
         <section>
             <h1>&lt;a&gt;</h1>
+
             <ul>
                 <li><a href="#href">href</a></li>
                 <li><a href="#hreflang">hreflang</a></li>
@@ -143,47 +144,60 @@
                 <li><a href="#target">target</a></li>
                 <li><a href="#tipe">tipe</a></li>
             </ul>
-            <p>
-                La  etiqueta &lt;a&gt; define un hipervínculo, que se utiliza para vincular de una página a otra.
-
-                    El atributo más importante del &lt;a&gt;elemento es el  atributo href="./index.html", que indica el destino del enlace.
-            </p>
-
-            <a name="href"><h2>href</a></h2>
 
             <p>
-                El valor href="" dentro de &lt;a&gt; da la ruta absoluta o relativa del archivo al que se realiza el hipervinculo.
+                La etiqueta &lt;a&gt; define un hipervínculo, que se utiliza para vincular una página a otra.
             </p>
-
-            <pre><code>&lt;a href="/images/icone.png"&gt;Clik aquí para ver el icono&lt;/a&gt;</code></pre>
-            <p>
-                Ejemplo: 
-            </p>
-            <a href="./sources/iconoOriginal.png" download>Clik aquí para ver el icono</a>
-
-            <a name="hreflang"><h2>hreflang</a></h2>
 
             <p>
-                Indica el idioma del archivo o url del hipervínculo.
+                El atributo más importante del elemento &lt;a&gt; es el atributo href="./index.html", que indica el destino del enlace.
             </p>
 
-            <h4>Sintaxis</h4>
 
-            <pre><code>&lt;a href="/pdf/English.pdf" hreflang="en"&gt;Clik aquí para ver el PDF&lt;/a&gt;</code></pre>
-            <p>
-                Ejemplo: 
-            </p>
-            <a href="./sources/English.pdf" download>Clik aquí para ver el PDF</a>
+            <a name="href"></a><h2>href</h2>
+            <div class="attribute">
+                <p>
+                    El valor de href="" dentro de &lt;a&gt;, da la ruta absoluta o relativa del archivo al que se realiza el hipervinculo.
+                </p>
 
-            <a name=""><h2>media</h2></a>
+                <h4>Sintaxis</h4>
 
-            <p>
+                <pre><code>&lt;a href="./images/icone.png"&gt;Clik aquí para ver el icono&lt;/a&gt;</code></pre>
 
-            </p>
+                <p>
+                    Ejemplo: <a href="./../sources/img/iconoOriginal.png">Clik aquí para ver el icono</a> 
+                </p>
+            </div>
 
-            <pre>
-                <code></code>
-            </pre>
+            
+
+            <a name="hreflang"></a><h2>hreflang</h2>
+            <div class="attribute">
+                <p>
+                    Indica el idioma del archivo o url del hipervínculo.
+                </p>
+
+                <h4>Sintaxis</h4>
+
+                <pre><code>&lt;a href="/pdf/English.pdf" hreflang="en"&gt;Clik aquí para ver el PDF&lt;/a&gt;</code></pre>
+
+                <p>
+                    Ejemplo: <a href="./../sources/pdf/English.pdf">Clik aquí para ver el PDF</a>
+                </p>
+            </div>
+
+
+
+            <a name="media"></a><h2>media</h2>
+            <div class="attribute">
+                <p>
+
+                </p>
+
+                <pre>
+                    <code></code>
+                </pre>
+            </div>
         </section>
     </body>
 </html>
