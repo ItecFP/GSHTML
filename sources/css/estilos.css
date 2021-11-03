@@ -90,14 +90,8 @@ section h1 {
 
 section h2 {
     display: block;
-    margin: 20px 0;
+    margin: 30px 0 10px 0;
     font-size: 28px;
-}
-
-section h4 {
-    display: block;
-    margin: 10px 0;
-    font-size: 18px;
 }
 
 section ul {
@@ -119,13 +113,14 @@ section p {
     text-align: justify;
 }
 
-section p a {
-    color: #00aaff;
-    text-decoration: underline;
-}
-
 section div.attribute {
     margin-left: 20px;
+}
+
+section div.attribute h4 {
+    display: block;
+    margin: 20px 0 10px 0;
+    font-size: 18px;
 }
 
 section div.attribute pre {
@@ -134,5 +129,12 @@ section div.attribute pre {
     padding: 10px;
     border-radius: 10px;
     background-color: rgb(30, 30, 40 );
+}
+
+section div.attribute a {
+    display: inline;
+    margin: 10px 0;
+    color: #00aaff;
+    text-decoration: underline;
 }
 /* SECTION */
