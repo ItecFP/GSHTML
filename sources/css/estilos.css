@@ -1,3 +1,11 @@
+/* Indice
+    General
+    Header
+    Nav
+    Secction
+        Tablas
+*/
+
 /* GENERAL */
 * {
     margin: 0;
@@ -87,16 +95,19 @@ section h1 {
     display: block;
     margin-bottom: 10px;
     font-size: 36px;
+    color: #00aaff;
 }
 
 section h2 {
     display: block;
     margin: 30px 0 10px 0;
     font-size: 28px;
+    color: #9cdcfe;
 }
 
 section ul {
     display: block;
+    margin-left: 20px;
     margin-bottom: 20px;
 }
 
@@ -105,13 +116,21 @@ section ul li {
 }
 
 section ul li a {
-    color: #00aaff;
+    color: #9cdcfe;
 }
 
 section p {
     display: block;
     margin: 10px 0;
     text-align: justify;
+}
+
+section code {
+    display: block;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(30, 30, 40 );
 }
 
 section div.attribute {
@@ -124,18 +143,43 @@ section div.attribute h4 {
     font-size: 18px;
 }
 
-section div.attribute pre {
-    display: block;
-    margin: 10px 0;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: rgb(30, 30, 40 );
-}
-
 section div.attribute a {
     display: inline;
     margin: 10px 0;
     color: #00aaff;
     text-decoration: underline;
 }
+
+/* TABLAS */
+table {
+    width: 100%;
+}
+ 
+table.column2 th, table.column2 td {
+    padding: 12px 0px 12px 8px;
+    width: calc(100% / 2);
+    vertical-align: center;
+    border: 2px solid #444;
+}
+
+table.column3 th, table.column3 td {
+    padding: 12px 0px 12px 8px;
+    width: calc(100% / 3);
+    vertical-align: center;
+    border: 2px solid #444;
+}
+
+table.column4 th, table.column4 td {
+    padding: 12px 0px 12px 8px;
+    width: calc(100% / 4);
+    vertical-align: center;
+    border: 2px solid #444;
+}
+
+th {
+    font-size: 18px;
+    text-align: center;
+}
+/* TABLAS */
+
 /* SECTION */

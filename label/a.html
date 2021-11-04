@@ -132,8 +132,9 @@
         </nav>
 
         <section>
-            <h1>&lt;a&gt;</h1>
 
+            <h1>&lt;a&gt;</h1>
+            
             <ul>
                 <li><a href="#href">href</a></li>
                 <li><a href="#hreflang">hreflang</a></li>
@@ -161,7 +162,7 @@
                 </p>
 
                 <h4>Sintaxis</h4>
-                <pre><code>&lt;a href="./img/icone.png"&gt;Clik aquí para ver el icono&lt;/a&gt;</code></pre>
+                <code>&lt;a href="./img/icone.png"&gt;Clik aquí para ver el icono&lt;/a&gt;</code>
 
                 <h4>Ejemplo</h4>
                 <a href="./../sources/img/iconoOriginal.png">Clik aquí para ver el icono</a>
@@ -176,7 +177,7 @@
                 </p>
 
                 <h4>Sintaxis</h4>
-                <pre><code>&lt;a href="./pdf/English.pdf" hreflang="en"&gt;Clik aquí para ver el PDF&lt;/a&gt;</code></pre>
+                <code>&lt;a href="./pdf/English.pdf" hreflang="en"&gt;Clik aquí para ver el PDF&lt;/a&gt;</code>
 
                 <h4>Ejemplo</h4>
                 <a href="./../sources/pdf/English.pdf">Clik aquí para ver el PDF</a>
@@ -187,12 +188,400 @@
             <a name="media"></a><h2>media</h2>
             <div class="attribute">
                 <p>
-
+                    Este atributo especifica para qué medio o dispositivo está optimizado el documento vinculado. Este atributo se utiliza para especificar que la URL de destino está diseñada para dispositivos especiales (como iPhone), medios impresos o de voz.
                 </p>
 
-                <pre>
-                    <code></code>
-                </pre>
+                <h4>Sintaxis</h4>
+                <code>&lt;a media="valor"&gt;&lt;/a&gt;</code>
+
+                <p>
+                    Este atributo puede aceptar los siguientes valores:                
+                </p>
+
+                <table class="column2">
+                    <tr>
+                        <th colspan="2">Dispositivos</th>
+                    </tr>
+
+                    <tr>
+                        <th>media="valor"</th>
+                        <th>Descripción</th>
+                    </tr>
+
+                    <tr>
+                        <td>all</td>
+                        <td>Por defecto. Apto para todos los dispositivos</td>
+                    </tr>
+
+                    <tr>
+                        <td>aural</td>
+                        <td>Sintetizadores de voz</td>
+                    </tr>
+
+                    <tr>
+                        <td>braille</td>
+                        <td>Dispositivos de retroalimentación en braille</td>
+                    </tr>
+
+                    <tr>
+                        <td>handheld</td>
+                        <td>Dispositivos de mano (pantalla pequeña, ancho de banda limitado)</td>
+                    </tr>
+
+                    <tr>
+                        <td>projection</td>
+                        <td>Proyectores</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>print</td>
+                        <td>Modo de vista previa de impresión</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>screen</td>
+                        <td>Pantalla de ordenador</td>
+                    </tr>
+
+                    <tr>
+                        <td>tty</td>
+                        <td>Teletipos y medios similares que utilizan una cuadrícula de caracteres de tono fijo</td>
+                    </tr>
+
+                    <tr>
+                        <td>tv</td>
+                        <td>Dispositivos de tipo televisión (baja resolución, capacidad de desplazamiento limitada)</td>
+                    </tr>
+
+                    <tr>
+                        <th colspan="2">Valores</th>
+                    </tr>
+
+                    <tr>
+                        <th>media="valor"</th>
+                        <th>Descripción</th>
+                    </tr>
+
+                    <tr>
+                        <td>width</td>
+                        <td>Especifica el ancho del área de visualización de destino. Se pueden utilizar los prefijos "min-" y "max-". <br> Ejemplo: media="screen and (min-width:500px)"</td>
+                    </tr>
+
+                    <tr>
+                        <td>height</td>
+                        <td>Especifica la altura del área de visualización de destino. Se pueden utilizar los prefijos "min-" y "max-". <br> Ejemplo: media="screen and (max-height:700px)"</td>
+                    </tr>
+
+                    <tr>
+                        <td>device-width</td>
+                        <td>Especifica el ancho de la pantalla/página de destino. Se pueden utilizar los prefijos "min-" y "max-". <br> Ejemplo: media="screen and (device-width:500px)"</td>
+                    </tr>
+
+                    <tr>
+                        <td>device-height</td>
+                        <td>Especifica la altura de la pantalla/página de destino. Se pueden utilizar los prefijos "min-" y "max-". <br> Ejemplo: media="screen and (device-height:500px)"</td>
+                    </tr>
+
+                    <tr>
+                        <td>orientation</td>
+                        <td>Especifica la orientación de la pantalla/página de destino. Valores posibles: "portrait" u "landscape". <br> Ejemplo: media="all and (orientation: landscape)"</td>
+                    </tr>
+
+                    <tr>
+                        <td>aspect-ratio</td>
+                        <td>Especifica la relación ancho/alto del área de visualización de destino. Se pueden utilizar los prefijos "min-" y "max-". <br> Ejemplo: media="screen and (aspect-ratio:16/9)"</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>device-aspect-ratio</td>
+                        <td>Especifica la relación del ancho/alto del dispositivo de la pantalla/página de destino. Se pueden utilizar los prefijos "min-" y "max-". <br> Ejemplo: media="screen and (aspect-ratio:16/9)"</td>
+                    </tr>
+
+                    <tr>
+                        <td>color</td>
+                        <td>Especifica los bits por color de la pantalla de destino. Se pueden utilizar los prefijos "min-" y "max-". <br> Ejemplo: media="screen and (color:3)"</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>color-index</td>
+                        <td>Especifica el número de colores que puede manejar la pantalla de destino. Se pueden utilizar los prefijos "min-" y "max-". <br> Ejemplo: media="screen and (min-color-index:256)"</td>
+                    </tr>
+
+                    <tr>
+                        <td>monochrome</td>
+                        <td>Especifica los bits por píxel en un búfer de fotogramas monocromáticos.Se pueden utilizar los prefijos "min-" y "max-". <br> Ejemplo: media="screen and (monochrome:2)"</td>
+                    </tr>
+
+                    <tr>
+                        <td>resolution</td>
+                        <td>Especifica los bits por píxel en un búfer de fotogramas monocromáticos. Se pueden utilizar los prefijos "min-" y "max-". <br> Ejemplo: media="screen and (monochrome:2)"</td>
+                    </tr>
+
+                    <tr>
+                        <td>scan</td>
+                        <td>Especifica el método de escaneo de una pantalla de televisión. Los valores posibles son "progressive" y "interlace" <br> Ejemplo: media="print and (resolution:300dpi)"</td>
+                    </tr>
+
+                    <tr>
+                        <td>grid</td>
+                        <td>Especifica si el dispositivo de salida es de cuadrícula o mapa de bits. Los valores posibles son "1" para la cuadrícula y "0" en caso contrario. <br> Ejemplo: media="handheld and (grid:1)"</td>
+                    </tr>
+
+                    <tr>
+                        <th colspan="2">Operadores</th>
+                    </tr>
+
+                    <tr>
+                        <th>media="valor"</th>
+                        <th>Descripción</th>
+                    </tr>
+
+                    <tr>
+                        <td>and</td>
+                        <td>Especifica un operador AND</td>
+                    </tr>
+
+                    <tr>
+                        <td>not</td>
+                        <td>Especifica un operador NOT</td>
+                    </tr>
+
+                    <tr>
+                        <td>,</td>
+                        <td>Especifica un operador OR</td>
+                    </tr>
+                </table>
+
+                <h4>Ejemplo</h4>
+                <code>
+                &lt;a href="att_a_media.asp?output=print" media="print and (resolution:300dpi)"&gt;
+                Abrir página de atributos para imprimir&lt;/a&gt;
+                </code>
+
+            </div>
+
+            <a name="ping"></a><h2>ping</h2>
+            <div class="attribute">
+                <p>
+                    El atributo ping especifica una lista de URLs que se notificarán si el usuario sigue el hipervínculo. 
+                    Cuando el usuario hace clic en el hipervínculo, el atributo ping enviará una breve solicitud HTTP POST a la URL especificada.
+                </p>
+
+                <p>
+                    Este atributo es útil para monitorear o rastrear la navegación de los usuarios.
+                </p>
+
+                <h4>Sintaxis</h4>
+                <code>&lt;a href="./index.html" ping="./tracks.txt"&gt;&lt;/a&gt;</code>
+            </div>
+            
+            <a name="referrerpolicy"></a><h2>referrerpolicy </h2>
+            <div class="attribute">
+                <p>
+                   Este atributo especifica qué información de referencia enviar cuando el usuario hace clic en el hipervínculo.
+                </p>
+
+                <h4>Sintaxis</h4>
+                <code>&lt;a referrerpolicy="valor"&gt;&lt;/a&gt;</code>
+
+                <p>
+                    Este atributo puede aceptar los siguientes valores:                
+                </p>
+
+                <table class="column2">
+                    <tr>
+                        <th>media="valor"</th>
+                        <th>Descripción</th>
+                    </tr>
+
+                    <tr>
+                        <td>no-referrer</td>
+                        <td>No se envía información de referencia</td>
+                    </tr>
+
+                    <tr>
+                        <td>no-referrer-when-downgrade</td>
+                        <td>Por defecto. Envía el origen, la ruta y la cadena de consulta si el nivel de seguridad del protocolo permanece igual o es más alto (HTTP a HTTP, HTTPS a HTTPS, HTTP a HTTPS está bien). No envía nada a un nivel menos seguro (HTTPS a HTTP no está bien)</td>
+                    </tr>
+
+                    <tr>
+                        <td>origin</td>
+                        <td>Envía el origen (esquema, host y puerto) del documento.</td>
+                    </tr>
+
+                    <tr>
+                        <td>origin-when-cross-origin</td>
+                        <td>Envía el origen del documento para la solicitud de origen cruzado. Envía el origen, la ruta y la cadena de consulta para la solicitud del mismo origen.</td>
+                    </tr>
+
+                    <tr>
+                        <td>same-origin</td>
+                        <td>Envía una referencia para una solicitud del mismo origen. No envía ninguna referencia para la solicitud de origen cruzado</td>
+                    </tr>
+
+                    <tr>
+                        <td>strict-origin-when-cross-origin</td>
+                        <td>Envía el origen si el nivel de seguridad del protocolo sigue siendo el mismo o es más alto (HTTP a HTTP, HTTPS a HTTPS y HTTP a HTTPS está bien). No envía nada a un nivel menos seguro (HTTPS a HTTP)</td>
+                    </tr>
+
+                    <tr>
+                        <td>unsafe-url</td>
+                        <td>Envía el origen, la ruta y la cadena de consulta (independientemente de la seguridad). ¡Utilice este valor con cuidado!</td>
+                    </tr>
+                </table>
+
+                <h4>Ejemplo</h4>
+                <code>&lt;a href="att_a_media.asp?output=print" media="print and (resolution:300dpi)"&gt;Abrir página de atributos para imprimir&lt;/a&gt;</code>
+            </div>
+
+            <a name="rel"></a><h2>rel</h2>
+            <div class="attribute">
+                <p>
+                    El atributo rel especifica la relación entre el documento actual y el documento vinculado. Solo se usa si el atributo href está presente.
+                </p>
+
+                <p>
+                    Los motores de búsqueda pueden utilizar este atributo para obtener más información sobre un enlace.
+                </p>
+
+                <h4>Sintaxis</h4>
+                <code>&lt;a rel="value"&gt;&lt;/a&gt;</code>
+
+                <table class=column2>
+                    <tr>
+                        <th>media="valor"</th>
+                        <th>Descripción</th>
+                    </tr>
+    
+                    <tr>
+                        <td>alternate</td>
+                        <td>Proporciona un enlace a una representación alternativa del documento (es decir, página impresa, traducida o reflejada)</td>
+                    </tr>
+    
+                    <tr>
+                        <td>author</td>
+                        <td>Proporciona un enlace al autor del documento.</td>
+                    </tr>
+    
+                    <tr>
+                        <td>bookmark</td>
+                        <td>URL permanente utilizada para los marcadores</td>
+                    </tr>
+    
+                    <tr>
+                        <td>external</td>
+                        <td>Indica que el documento referenciado no es parte del mismo sitio que el documento actual</td>
+                    </tr>
+    
+                    <tr>
+                        <td>help</td>
+                        <td>Proporciona un enlace a un documento de ayuda.</td>
+                    </tr>
+    
+                    <tr>
+                        <td>license</td>
+                        <td>Proporciona un enlace a la información de licencia del documento.</td>
+                    </tr>
+    
+                    <tr>
+                        <td>next</td>
+                        <td>Proporciona un enlace al siguiente documento de la serie.</td>
+                    </tr>
+    
+                    <tr>
+                        <td>nofollow</td>
+                        <td>Vínculos a un documento no endosado, como un vínculo pago.</td>
+                    </tr>
+    
+                    <tr>
+                        <td>noopener</td>
+                        <td>Requiere que cualquier contexto de navegación creado siguiendo el hipervínculo no debe tener un contexto de navegación de apertura</td>
+                    </tr>
+    
+                    <tr>
+                        <td>noreferrer</td>
+                        <td>Hace que la referencia sea desconocida. No se incluirá ningún encabezado de referencia cuando el usuario haga clic en el hipervínculo</td>
+                    </tr>
+    
+                    <tr>
+                        <td>prev</td>
+                        <td>El documento anterior en una selección</td>
+                    </tr>
+    
+                    <tr>
+                        <td>search</td>
+                        <td>Enlaces a una herramienta de búsqueda del documento</td>
+                    </tr>
+    
+                    <tr>
+                        <td>tag</td>
+                        <td>Una etiqueta (palabra clave) para el documento actual</td>
+                    </tr>
+                </table>
+
+            </div>
+
+            <a name="target"></a><h2>target</h2>
+            <div class="attribute">
+                <p>
+                    El atributo target especifica dónde abrir el documento vinculado.
+                </p>
+
+                <h4>Sintaxis</h4>
+                <code>&lt;a href="./index.html target="_blank"&gt;&lt;/a&gt;</code>
+
+                <table class="column2">
+                    <tr>
+                        <th colspan="2">Valores</th>
+                    </tr>
+
+                    <tr>
+                        <th>target="valor"</th>
+                        <th>Descripción</th>
+                    </tr>
+
+                    <tr>
+                        <td>_blank</td>
+                        <td>Abre la página vinculada en una nueva ventana o pestaña</td>
+                    </tr>
+
+                    <tr>
+                        <td>_self</td>
+                        <td>Abre la página vinculada en la misma ventana o pestaña (este es el valor predeterminado)</td>
+                    </tr>
+
+                    <tr>
+                        <td>_parent</td>
+                        <td>Abre la página vinculada en la ventana o pestaña anterior</td>
+                    </tr>
+                                        
+                    <tr>
+                        <td>_top</td>
+                        <td>Abre la página vinculada en todo el cuerpo de la ventana o pestaña</td>
+                    </tr>
+
+                    <tr>
+                        <td>framename</td>
+                        <td>Abre la página vinculada en un iframe</td>
+                    </tr>
+                </table>
+
+                <h4>Ejemplo</h4>
+                <a href="../index.html" target="_blank">Abre la página de Inicio en una nueva ventana</a>
+            </div>
+
+            <a name="type"></a><h2>type</h2>
+            <div class="attribute">
+                <p>
+                    El atributo target especifica dónde abrir el documento vinculado.
+                </p>
+
+                <h4>Sintaxis</h4>
+                <code>&lt;a href="https://www.GSHTML.com" type="text/html">GSHTML&gt;&lt;/a&gt;</code>
+
+                <p>
+                    Este atributo puede contener cualquier tipo de archivo, aquí te dejamos un enlace a <a href="http://www.iana.org/assignments/media-types/media-types.xhtml">todos los tipos de archivo</a>
+                </p>
             </div>
         </section>
     </body>
