@@ -11,7 +11,7 @@
         <script src="./../sources/js/scripts.js"></script>
         <link rel="stylesheet" href="./../sources/css/estilos.css">
         <link rel="icon" href="./../sources/img/icon.png">
-        <title>&lt;!-- --&gt; HTML</title>
+        <title>&lt;abbr&gt; HTML</title>
     </head>
 
     <body>
@@ -23,12 +23,12 @@
         <nav class="menu">
             <ul>
                 <li><a href="./../index.html">Inicio</a></li>
-                <hr>
-                <li><a id="active" href=./comments.html>&lt;!-- --&gt;</a></li>
-                <hr>
+                <li><a href=./comments.html>&lt;!-- --&gt;</a></li>
                 <li><a href=./doctype.html>&lt;!DOCTYPE&gt;</a></li>
                 <li><a href=./a.html>&lt;a&gt;</a></li>
-                <li><a href=./abbr.html>&lt;abbr&gt;</a></li>
+                <hr>
+                <li><a id="active" href=./abbr.html>&lt;abbr&gt;</a></li>
+                <hr>
                 <li><a href=./address.html>&lt;address&gt;</a></li>
                 <li><a href=./area.html>&lt;area&gt;</a></li>
                 <li><a href=./article.html>&lt;article&gt;</a></li>
@@ -131,17 +131,22 @@
                 <li><a href=./wbr.html>&lt;wbr&gt;</a></li>
             </ul>
         </nav>
+
         <section>
-            <h1>&lt;!-- --&gt;</h1>
+
+            <h1>&lt;abbr&gt;</h1>
             
             <p>
-                La etiqueta de comentarios se utiliza, para comentar código, lo que escribas no se 
-                verá en el navegador. Se puede usar para explicar el código o tomar apuntes de lo que queda por desarrollar, 
-                apuntar ideas, etc...
+                Esta etiqueta sirve para definir una abreviatura. Se escribiria de esta forma:
             </p>
 
-            <code>&lt;!--Aqui hay un comentario--&gt;</code>
+            <pre><code>&lt;abbr title="HyperText Markup Language"&gt;HTML&lt;/abbr&gt;</code></pre>
 
+            <p>
+                Aqui un simple ejemplo práctico para ver como funciona:
+            </p>
+
+            <abbr title="HyperText Markup Language">HTML</abbr>
         </section>
     </body>
 </html>
