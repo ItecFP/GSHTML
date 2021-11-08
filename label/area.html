@@ -11,7 +11,7 @@
         <script src="./../sources/js/scripts.js"></script>
         <link rel="stylesheet" href="./../sources/css/estilos.css">
         <link rel="icon" href="./../sources/img/icon.png">
-        <title>Guia Suprema de HTML</title>
+        <title>&lt;area&gt; HTML</title>
     </head>
 
     <body>
@@ -22,14 +22,15 @@
 
         <nav class="menu">
             <ul>
-                <li><a id="active" href="./../index.html">Inicio</a></li>
-                <hr>
+                <li><a href="./../index.html">Inicio</a></li>
                 <li><a href=./comments.html>&lt;!-- --&gt;</a></li>
                 <li><a href=./doctype.html>&lt;!DOCTYPE&gt;</a></li>
                 <li><a href=./a.html>&lt;a&gt;</a></li>
                 <li><a href=./abbr.html>&lt;abbr&gt;</a></li>
                 <li><a href=./address.html>&lt;address&gt;</a></li>
-                <li><a href=./area.html>&lt;area&gt;</a></li>
+                <hr>
+                <li><a id="active" href=./area.html>&lt;area&gt;</a></li>
+                <hr>
                 <li><a href=./article.html>&lt;article&gt;</a></li>
                 <li><a href=./aside.html>&lt;aside&gt;</a></li>
                 <li><a href=./audio.html>&lt;audio&gt;</a></li>
@@ -132,31 +133,37 @@
         </nav>
 
         <main>
-            <h1></h1>
+            <h1>&lt;area&gt;</h1>
+            
+            <p>
+                La etiqueta &lt;area&gt; define un área dentro de un mapa de imagen, es una imagen con áreas en las que se puede hacer clic.
+            </p>
 
             <p>
-                
+                Esta etiqueta debe ir siempre dentro de la etiqueta <a href=./map.html>&lt;map&gt;</a> y acompañada de una <a href=./img.html>&lt;img&gt;</a>
             </p>
-            
+
             <h4>Sintaxis</h4>
             <pre><code>
-                
+                &lt;img src="./../sources/img/planetas.gif" width="145" height="126" alt="Planets" usemap="#planetmap"&gt;
+
+                &lt;map name="planetmap"&gt;
+                    &lt;area shape="rect" coords="0,0,82,126" alt="Sun" href="Sol.html"&gt;
+                    &lt;area shape="circle" coords="90,58,3" alt="Mercury" href="Mercurio.html"&gt;
+                    &lt;area shape="circle" coords="124,58,8" alt="Venus" href="Venus.html"&gt;
+                &lt;/map&gt; 
             </code></pre>
 
-            <a name=""></a><h2></h2>
-            <div class="attribute">
+            <h4>Ejemplo</h4>
+            <div>
+                <img src="./../sources/img/planetas.gif" width="145" height="126" alt="Planets" usemap="#planetmap">
                 
+                <map name="planetmap"> 
+                    <area shape="rect" coords="0,0,82,126" alt="Sun" href="https://es.wikipedia.org/wiki/Sol">
+                    <area shape="circle" coords="90,58,3" alt="Mercury" href="https://es.wikipedia.org/wiki/Mercurio_(planeta)">
+                    <area shape="circle" coords="124,58,8" alt="Venus" href="https://es.wikipedia.org/wiki/Venus_(planeta)">
+                </map>
             </div>
-
-            <table class=column>
-                <tr>
-                    <th></th>
-                </tr>
-
-                <tr>
-                    <td></td>
-                </tr>
-            </table>
         </main>
     </body>
 </html>

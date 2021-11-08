@@ -11,7 +11,7 @@
         <script src="./../sources/js/scripts.js"></script>
         <link rel="stylesheet" href="./../sources/css/estilos.css">
         <link rel="icon" href="./../sources/img/icon.png">
-        <title>Guia Suprema de HTML</title>
+        <title>&lt;article&gt; HTML</title>
     </head>
 
     <body>
@@ -22,15 +22,16 @@
 
         <nav class="menu">
             <ul>
-                <li><a id="active" href="./../index.html">Inicio</a></li>
-                <hr>
+                <li><a href="./../index.html">Inicio</a></li>
                 <li><a href=./comments.html>&lt;!-- --&gt;</a></li>
                 <li><a href=./doctype.html>&lt;!DOCTYPE&gt;</a></li>
                 <li><a href=./a.html>&lt;a&gt;</a></li>
                 <li><a href=./abbr.html>&lt;abbr&gt;</a></li>
                 <li><a href=./address.html>&lt;address&gt;</a></li>
                 <li><a href=./area.html>&lt;area&gt;</a></li>
-                <li><a href=./article.html>&lt;article&gt;</a></li>
+                <hr>
+                <li><a id="active" href=./article.html>&lt;article&gt;</a></li>
+                <hr>
                 <li><a href=./aside.html>&lt;aside&gt;</a></li>
                 <li><a href=./audio.html>&lt;audio&gt;</a></li>
                 <li><a href=./b.html>&lt;b&gt;</a></li>
@@ -132,31 +133,39 @@
         </nav>
 
         <main>
-            <h1></h1>
+            <h1>&lt;article&gt;</h1>
 
             <p>
-                
+                La etiqueta &lt;article&gt; especifica un contenido autónomo e independiente.
             </p>
+
+            <p>
+                Un artículo debería tener sentido por sí solo y debería ser posible distribuirlo independientemente del resto del sitio.
+            </p>
+                
+            <p>
+                Fuentes potenciales del &lt;article&gt; elemento:
+            </p>
+
+            <ul>
+                <li>Una publicación en un Foro</li>
+                <li>Una entrada en un Blog</li>
+                <li>Una Noticia</li>
+            </ul>
             
             <h4>Sintaxis</h4>
             <pre><code>
-                
+            &lt;article&gt;
+                &lt;h5&gt;Microsoft Edge&lt;/h5&gt;
+                &lt;p&gt;Es el navegador web de Microsoft&lt;/p&gt;
+            &lt;/article&gt;
             </code></pre>
 
-            <a name=""></a><h2></h2>
-            <div class="attribute">
-                
-            </div>
-
-            <table class=column>
-                <tr>
-                    <th></th>
-                </tr>
-
-                <tr>
-                    <td></td>
-                </tr>
-            </table>
+            <h4>Ejemplo</h4>
+            <article>
+                <h5>Microsoft Edge</h5>
+                <p>Es el navegador web de Microsoft</p>
+            </article>
         </main>
     </body>
 </html>

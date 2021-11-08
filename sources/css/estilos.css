@@ -88,46 +88,47 @@ header h1 {
 }
 /* NAV */
 
-/* SECTION */
-section {
+/* MAIN */
+main {
     margin: 2% 4% 0% 18%;
+    padding-bottom: 200px;
 }
 
-section h1 {
+main h1 {
     display: block;
     margin-bottom: 10px;
     font-size: 36px;
     color: #00aaff;
 }
 
-section h2 {
+main h2 {
     display: block;
     margin: 30px 0 10px 0;
     font-size: 28px;
     color: #9cdcfe;
 }
 
-section ul {
+main ul {
     display: block;
     margin-left: 20px;
     margin-bottom: 20px;
 }
 
-section ul li {
+main ul li {
     display: block;
 }
 
-section ul li a {
+main ul li a {
     color: #9cdcfe;
 }
 
-section p {
+main p {
     display: block;
     margin: 10px 0;
     text-align: justify;
 }
 
-section code {
+main code {
     display: block;
     margin: 10px 0;
     padding: 20px;
@@ -135,17 +136,17 @@ section code {
     background-color: rgb(30, 30, 40 );
 }
 
-section div.attribute {
+main div.attribute {
     margin-left: 20px;
 }
 
-section div.attribute h4 {
+main div.attribute h4 {
     display: block;
     margin: 20px 0 10px 0;
     font-size: 18px;
 }
 
-section div.attribute a {
+main div.attribute a {
     display: inline;
     margin: 10px 0;
     color: #00aaff;
@@ -184,4 +185,4 @@ th {
 }
 /* TABLAS */
 
-/* SECTION */
+/* MAIN */
