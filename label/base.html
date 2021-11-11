@@ -11,7 +11,7 @@
         <script src="./../sources/js/scripts.js"></script>
         <link rel="stylesheet" href="./../sources/css/estilos.css">
         <link rel="icon" href="./../sources/img/icon.png">
-        <title>&lt;&gt; HTML</title>
+        <title>&lt;base&gt; HTML</title>
     </head>
 
     <body>
@@ -22,9 +22,7 @@
 
         <nav class="menu">
             <ul>
-                <hr>
-                <li><a id="active" href="./../index.html">Inicio</a></li>
-                <hr>
+                <li><a href="./../index.html">Inicio</a></li>
                 <li><a href="./comments.html">&lt;!-- --&gt;</a></li>
                 <li><a href="./doctype.html">&lt;!DOCTYPE&gt;</a></li>
                 <li><a href="./a.html">&lt;a&gt;</a></li>
@@ -35,7 +33,9 @@
                 <li><a href="./aside.html">&lt;aside&gt;</a></li>
                 <li><a href="./audio.html">&lt;audio&gt;</a></li>
                 <li><a href="./b.html">&lt;b&gt;</a></li>
-                <li><a href="./base.html">&lt;base&gt;</a></li>
+                <hr>
+                <li><a id="active" href="./base.html">&lt;base&gt;</a></li>
+                <hr>
                 <li><a href="./bdi.html">&lt;bdi&gt;</a></li>
                 <li><a href="./bdo.html">&lt;bdo&gt;</a></li>
                 <li><a href="./blockquote.html">&lt;blockquote&gt;</a></li>
@@ -133,31 +133,79 @@
         </nav>
 
         <main>
-            <h1>&lt;&gt;</h1>
+            <h1>&lt;base&gt;</h1>
 
             <ul>
-                <li><a href=""></a></li>
+                <li><a href="#href">href</a></li>
+                <li><a href="#target">target</a></li>
             </ul>
 
-            <p></p>
+            <p>
+                La etiqueta &lt;base&gt; especifica la URL base y/o el destino para todas las URL relativas en un documento.
+                La etiqueta &lt;base&gt; debe tener un href o un atributo de destino presente, o ambos.
+            </p>
+
+            <p>
+                Solo puede haber un único elemento &lt;base&gt; en el documento y debe estar dentro del &lt;head&gt;.
+            </p>
             
             <h3>Sintaxis</h3>
-            <pre><code></code></pre>
+            <pre><code>
+            &lt;head&gt;
+                &lt;base href="hhtps://www.GSHTML.com/" target="_blank"&gt;
+            &lt;/head&gt;
+            </code></pre>
 
-            <a name=""></a><h2></h2>
+            <a name="href"></a><h2>href</h2>
             <div class="attribute">
-                
+                <p>
+                    El valor de href="" da la ruta absoluta o relativa del archivo al que se realiza el hipervínculo.
+                </p>
+
+                <h3>Sintaxis</h3>
+                <code>&lt;base href="./index.html"&gt;</code>
             </div>
 
-            <table class="column">
-                <tr>
-                    <th></th>
-                </tr>
+            <a name="target"></a><h2>target</h2>
+            <div class="attribute">
+                <p>
+                    El atributo target especifica dónde abrir el documento vinculado.
+                </p>
 
-                <tr>
-                    <td></td>
-                </tr>
-            </table>
+                <h3>Sintaxis</h3>
+                <code>&lt;base href="./index.html" target="_blank"&gt;</code>
+
+                <table class="column2">
+                    <tr>
+                        <th colspan="2">Valores</th>
+                    </tr>
+
+                    <tr>
+                        <th>target="valor"</th>
+                        <th>Descripción</th>
+                    </tr>
+
+                    <tr>
+                        <td>_blank</td>
+                        <td>Abre la página vinculada en una nueva ventana o pestaña</td>
+                    </tr>
+
+                    <tr>
+                        <td>_self</td>
+                        <td>Abre la página vinculada en la misma ventana o pestaña (este es el valor predeterminado)</td>
+                    </tr>
+
+                    <tr>
+                        <td>_parent</td>
+                        <td>Abre la página vinculada en la ventana o pestaña anterior</td>
+                    </tr>
+                                        
+                    <tr>
+                        <td>_top</td>
+                        <td>Abre la página vinculada en todo el cuerpo de la ventana o pestaña</td>
+                    </tr>
+                </table>
+            </div>
         </main>
     </body>
 </html>
