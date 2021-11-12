@@ -9,7 +9,7 @@
         <meta name="author" content="David Pozo, Alberto Sánchez">
         <link rel="stylesheet" href="./../sources/css/estilos.css">
         <link rel="icon" href="./../sources/img/icon.png">
-        <title>&lt;audio&gt; HTML</title>
+        <title>&lt;base&gt; HTML</title>
     </head>
 
     <body>
@@ -29,11 +29,11 @@
                 <li><a href="./area.html">&lt;area&gt;</a></li>
                 <li><a href="./article.html">&lt;article&gt;</a></li>
                 <li><a href="./aside.html">&lt;aside&gt;</a></li>
-                <hr>
-                <li><a id="active" href="./audio.html">&lt;audio&gt;</a></li>
-                <hr>
+                <li><a href="./audio.html">&lt;audio&gt;</a></li>
                 <li><a href="./b.html">&lt;b&gt;</a></li>
-                <li><a href="./base.html">&lt;base&gt;</a></li>
+                <hr>
+                <li><a id="active" href="./base.html">&lt;base&gt;</a></li>
+                <hr>
                 <li><a href="./bdi.html">&lt;bdi&gt;</a></li>
                 <li><a href="./bdo.html">&lt;bdo&gt;</a></li>
                 <li><a href="./blockquote.html">&lt;blockquote&gt;</a></li>
@@ -131,76 +131,79 @@
         </nav>
 
         <main>
-            <h1>&lt;audio&gt;</h1>
+            <h1>&lt;base&gt;</h1>
+
+            <ul>
+                <li><a href="#href">href</a></li>
+                <li><a href="#target">target</a></li>
+            </ul>
 
             <p>
-                La etiqueta &lt;audio&gt; se utiliza para incrustar contenido de sonido en un documento, como música u otras transmisiones de audio.
+                La etiqueta &lt;base&gt; especifica la URL base y/o el destino para todas las URL relativas en un documento.
+                La etiqueta &lt;base&gt; debe tener un href o un atributo de destino presente, o ambos.
             </p>
 
             <p>
-                La etiqueta &lt;audio&gt; contiene una o más etiquetas &lt;source&gt; con diferentes fuentes de audio. El navegador elegirá la primera fuente que admita.
-            </p>
-
-            <p>
-                El texto entre las etiquetas &lt;audio&gt; y &lt;/audio&gt; sólo se mostrará en los navegadores que no soportan el elemento &lt;audio&gt;.
-            </p>
-
-            <p>
-                Hay varios formatos de audio compatibles en HTML, como por ejemplo: MP3, WAV y OGG... etc.
+                Solo puede haber un único elemento &lt;base&gt; en el documento y debe estar dentro del &lt;head&gt;.
             </p>
             
             <h3>Sintaxis</h3>
-            <code>&lt;audio src="./../sources/audio/test.mp3" controls&gt;&lt;/audio&gt;</code>
+            <pre><code>
+            &lt;head&gt;
+                &lt;base href="hhtps://www.GSHTML.com/" target="_blank"&gt;
+            &lt;/head&gt;
+            </code></pre>
 
-            <table class=column3>
-                <tr>
-                    <th colspan="3">Atributos</th>
-                </tr>
-                <tr>
-                    <th>Atributo</th>
-                    <th>Valor</th>
-                    <th>Descripción</th>
-                </tr>
+            <a name="href"></a><h2>href</h2>
+            <div class="attribute">
+                <p>
+                    El valor de href="" da la ruta absoluta o relativa del archivo al que se realiza el hipervínculo.
+                </p>
 
-                <tr>
-                    <td>autoplay</td>
-                    <td>autoplay</td>
-                    <td>Especifica que el audio comenzará a reproducirse tan pronto como esté listo</td>
-                </tr>
+                <h3>Sintaxis</h3>
+                <code>&lt;base href="./index.html"&gt;</code>
+            </div>
 
-                <tr>
-                    <td>controls</td>
-                    <td>controls</td>
-                    <td>Especifica que se deben mostrar los controles de audio (como un botón de reproducción, pausa, etc...)</td>
-                </tr>
+            <a name="target"></a><h2>target</h2>
+            <div class="attribute">
+                <p>
+                    El atributo target especifica dónde abrir el documento vinculado.
+                </p>
 
-                <tr>
-                    <td>loop</td>
-                    <td>loop</td>
-                    <td>Especifica que el audio comenzará de nuevo cada vez que termine</td>
-                </tr>
+                <h3>Sintaxis</h3>
+                <code>&lt;base href="./index.html" target="_blank"&gt;</code>
 
-                <tr>
-                    <td>muted</td>
-                    <td>muted</td>
-                    <td>Especifica que la salida de audio debe estar silenciada</td>
-                </tr>
+                <table class="column2">
+                    <tr>
+                        <th colspan="2">Valores</th>
+                    </tr>
 
-                <tr>
-                    <td>preload</td>
-                    <td>auto, metadata, none</td>
-                    <td>Especifica si el autor cree que se debe cargar el audio cuando se carga la página y cómo lo hace</td>
-                </tr>
+                    <tr>
+                        <th>target="valor"</th>
+                        <th>Descripción</th>
+                    </tr>
 
-                <tr>
-                    <td>src</td>
-                    <td>URL</td>
-                    <td>Especifica la URL del archivo de audio</td>
-                </tr>
-            </table>
+                    <tr>
+                        <td>_blank</td>
+                        <td>Abre la página vinculada en una nueva ventana o pestaña</td>
+                    </tr>
 
-            <h3>Ejemplo</h3>
-            <audio src="./../sources/audio/test.mp3" controls></audio>
+                    <tr>
+                        <td>_self</td>
+                        <td>Abre la página vinculada en la misma ventana o pestaña (este es el valor predeterminado)</td>
+                    </tr>
+
+                    <tr>
+                        <td>_parent</td>
+                        <td>Abre la página vinculada en la ventana o pestaña anterior</td>
+                    </tr>
+                                        
+                    <tr>
+                        <td>_top</td>
+                        <td>Abre la página vinculada en todo el cuerpo de la ventana o pestaña</td>
+                    </tr>
+                </table>
+            </div>
         </main>
     </body>
 </html>

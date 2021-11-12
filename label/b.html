@@ -9,7 +9,7 @@
         <meta name="author" content="David Pozo, Alberto Sánchez">
         <link rel="stylesheet" href="./../sources/css/estilos.css">
         <link rel="icon" href="./../sources/img/icon.png">
-        <title>&lt;audio&gt; HTML</title>
+        <title>&lt;b&gt; HTML</title>
     </head>
 
     <body>
@@ -29,10 +29,10 @@
                 <li><a href="./area.html">&lt;area&gt;</a></li>
                 <li><a href="./article.html">&lt;article&gt;</a></li>
                 <li><a href="./aside.html">&lt;aside&gt;</a></li>
+                <li><a href="./audio.html">&lt;audio&gt;</a></li>
                 <hr>
-                <li><a id="active" href="./audio.html">&lt;audio&gt;</a></li>
+                <li><a id="active" href="./b.html">&lt;b&gt;</a></li>
                 <hr>
-                <li><a href="./b.html">&lt;b&gt;</a></li>
                 <li><a href="./base.html">&lt;base&gt;</a></li>
                 <li><a href="./bdi.html">&lt;bdi&gt;</a></li>
                 <li><a href="./bdo.html">&lt;bdo&gt;</a></li>
@@ -131,76 +131,17 @@
         </nav>
 
         <main>
-            <h1>&lt;audio&gt;</h1>
+            <h1>&lt;b&gt;</h1>
 
             <p>
-                La etiqueta &lt;audio&gt; se utiliza para incrustar contenido de sonido en un documento, como música u otras transmisiones de audio.
-            </p>
-
-            <p>
-                La etiqueta &lt;audio&gt; contiene una o más etiquetas &lt;source&gt; con diferentes fuentes de audio. El navegador elegirá la primera fuente que admita.
-            </p>
-
-            <p>
-                El texto entre las etiquetas &lt;audio&gt; y &lt;/audio&gt; sólo se mostrará en los navegadores que no soportan el elemento &lt;audio&gt;.
-            </p>
-
-            <p>
-                Hay varios formatos de audio compatibles en HTML, como por ejemplo: MP3, WAV y OGG... etc.
+                La etiqueta &lt;b&gt; especifica texto en negrita sin ninguna importancia adicional.
             </p>
             
             <h3>Sintaxis</h3>
-            <code>&lt;audio src="./../sources/audio/test.mp3" controls&gt;&lt;/audio&gt;</code>
-
-            <table class=column3>
-                <tr>
-                    <th colspan="3">Atributos</th>
-                </tr>
-                <tr>
-                    <th>Atributo</th>
-                    <th>Valor</th>
-                    <th>Descripción</th>
-                </tr>
-
-                <tr>
-                    <td>autoplay</td>
-                    <td>autoplay</td>
-                    <td>Especifica que el audio comenzará a reproducirse tan pronto como esté listo</td>
-                </tr>
-
-                <tr>
-                    <td>controls</td>
-                    <td>controls</td>
-                    <td>Especifica que se deben mostrar los controles de audio (como un botón de reproducción, pausa, etc...)</td>
-                </tr>
-
-                <tr>
-                    <td>loop</td>
-                    <td>loop</td>
-                    <td>Especifica que el audio comenzará de nuevo cada vez que termine</td>
-                </tr>
-
-                <tr>
-                    <td>muted</td>
-                    <td>muted</td>
-                    <td>Especifica que la salida de audio debe estar silenciada</td>
-                </tr>
-
-                <tr>
-                    <td>preload</td>
-                    <td>auto, metadata, none</td>
-                    <td>Especifica si el autor cree que se debe cargar el audio cuando se carga la página y cómo lo hace</td>
-                </tr>
-
-                <tr>
-                    <td>src</td>
-                    <td>URL</td>
-                    <td>Especifica la URL del archivo de audio</td>
-                </tr>
-            </table>
+            <code>&lt;b&gt;Texto en negrita&lt;/b&gt;</code>
 
             <h3>Ejemplo</h3>
-            <audio src="./../sources/audio/test.mp3" controls></audio>
+            <b>Texto en negrita</b>
         </main>
     </body>
 </html>
