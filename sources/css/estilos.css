@@ -150,6 +150,21 @@ main code {
     background-color: rgb(30, 30, 40 );
 }
 
+main code div.line1 {
+    display: block;
+    margin-left: 0px;
+}
+
+main code div.line2 {
+    display: block;
+    margin-left: 20px;
+}
+
+main code div.line3 {
+    display: block;
+    margin-left: 40px;
+}
+
 main section.attribute {
     margin-left: 20px;
 }
