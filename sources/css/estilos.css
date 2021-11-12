@@ -1,10 +1,14 @@
-/* Indice
-    
-General | 11 - 25
-Header | 27 - 50
-Nav | 52 - 89
-Section | 91 - 187
-    Tablas | 155 - 185
+/* 
+
+------------------
+----- Indice -----
+------------------
+
+GENERAL ............... 15 - 29
+HEADER ................ 31 - 56
+NAV ................... 58 - 92
+MAIN .................. 94 - 183
+TABLAS ................ 185 - 215
 
 */
 
@@ -47,53 +51,49 @@ header a img {
 
 header h1 {
     margin: 20px;
-    font-size: 40px;
+    font-size: 42px;
 }
 /* HEADER */
 
 /* NAV */
-.menu {
+aside {
     position: fixed;
     width: 15%;
-    height: 88%;
+    height: 89%;
     overflow: auto;
-    transition: all linear 0.2s;
     background-color: rgb(40, 40, 50);
 }
 
-.menu-fixed {
-    top: 0;
-    height: 100%;
-}
-
-.menu ul {
+nav {
     display: block;
-    width: 99%;
 }
 
-.menu ul hr {
-    width: 99%;
+nav ul {
+    display: block;
+}
+
+nav ul hr {
+    display: block;
     background-color: #dddddd;
 }
 
-.menu ul li a {
+nav ul li a {
     display: block;
     padding: 8px 0px 8px 16px;
 }
 
-.menu ul li a#active {
+nav ul li a#active {
     background-color: rgb(60, 60, 70);
 }
 
-.menu ul li a:hover:not(#active) {
+nav ul li a:hover:not(#active) {
     background-color: rgb(60, 60, 70);
 }
 /* NAV */
 
 /* MAIN */
 main {
-    margin: 2% 4% 0% 18%;
-    padding-bottom: 200px;
+    margin: 2% 4% 20% 18%;
 }
 
 main h1 {
@@ -113,7 +113,7 @@ main h2 {
 main h3 {
     display: block;
     margin: 20px 0 10px 0;
-    font-size: 22px;
+    font-size: 24px;
 }
 
 main h4 {
@@ -124,8 +124,7 @@ main h4 {
 
 main ul {
     display: block;
-    margin-left: 20px;
-    margin-bottom: 20px;
+    margin: 0 0 20px 20px;
 }
 
 main ul li {
@@ -142,6 +141,12 @@ main p {
     text-align: justify;
 }
 
+main aside {
+    display: block;
+    width: 100%;
+}
+
+
 main code {
     display: block;
     margin: 10px 0;
@@ -150,19 +155,19 @@ main code {
     background-color: rgb(30, 30, 40 );
 }
 
-main code div.line1 {
+main code p.tab1 {
     display: block;
-    margin-left: 0px;
+    margin: 5px 0;
 }
 
-main code div.line2 {
+main code p.tab2 {
     display: block;
-    margin-left: 20px;
+    margin: 5px 30px;
 }
 
-main code div.line3 {
+main code p.tab3 {
     display: block;
-    margin-left: 40px;
+    margin: 5px 60px;
 }
 
 main section.attribute {
@@ -175,6 +180,7 @@ main section.attribute a {
     color: #00aaff;
     text-decoration: underline;
 }
+/* MAIN */
 
 /* TABLAS */
 table {
@@ -207,5 +213,3 @@ table.column4 th, table.column4 td {
     border: 2px solid #444;
 }
 /* TABLAS */
-
-/* MAIN */
