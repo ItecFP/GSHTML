@@ -193,21 +193,21 @@ th {
 }
  
 table.column2 th, table.column2 td {
-    padding: 12px 0px 12px 8px;
+    padding: 12px 8px;
     width: calc(100% / 2);
     vertical-align: center;
     border: 2px solid #444;
 }
 
 table.column3 th, table.column3 td {
-    padding: 12px 0px 12px 8px;
+    padding: 12px 8px;
     width: calc(100% / 3);
     vertical-align: center;
     border: 2px solid #444;
 }
 
 table.column4 th, table.column4 td {
-    padding: 12px 0px 12px 8px;
+    padding: 12px 8px;
     width: calc(100% / 4);
     vertical-align: center;
     border: 2px solid #444;
