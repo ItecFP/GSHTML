@@ -170,11 +170,11 @@ main code p.tab3 {
     margin: 5px 60px;
 }
 
-main section.attribute {
+main div.attribute {
     margin-left: 20px;
 }
 
-main section.attribute a {
+main div.attribute a {
     display: inline;
     margin: 10px 0;
     color: #00aaff;
