@@ -55,7 +55,7 @@ header h1 {
 }
 /* HEADER */
 
-/* NAV */
+/* NAV Global */
 aside {
     position: fixed;
     width: 15%;
@@ -64,29 +64,29 @@ aside {
     background-color: rgb(40, 40, 50);
 }
 
-nav {
+aside nav {
     display: block;
 }
 
-nav ul {
+aside nav ul {
     display: block;
 }
 
-nav ul hr {
+aside nav ul hr {
     display: block;
     background-color: #dddddd;
 }
 
-nav ul li a {
+aside nav ul li a {
     display: block;
     padding: 8px 0px 8px 16px;
 }
 
-nav ul li a#active {
+aside nav ul li a#active {
     background-color: rgb(60, 60, 70);
 }
 
-nav ul li a:hover:not(#active) {
+aside nav ul li a:hover:not(#active) {
     background-color: rgb(60, 60, 70);
 }
 /* NAV */
