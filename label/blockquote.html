@@ -9,7 +9,7 @@
         <meta name="author" content="David Pozo, Alberto Sánchez">
         <link rel="stylesheet" href="./../sources/css/estilos.css">
         <link rel="icon" href="./../sources/img/icon.png">
-        <title>&lt;&gt; HTML</title>
+        <title>&lt;blockquote&gt; HTML</title>
     </head>
 
     <body>
@@ -21,9 +21,7 @@
         <aside>
             <nav>
                 <ul>
-                    <hr>
-                    <li><a id="active" href="./../index.html">Inicio</a></li>
-                    <hr>
+                    <li><a href="./../index.html">Inicio</a></li>
                     <li><a href="./comments.html">&lt;!-- --&gt;</a></li>
                     <li><a href="./doctype.html">&lt;!DOCTYPE&gt;</a></li>
                     <li><a href="./a.html">&lt;a&gt;</a></li>
@@ -37,7 +35,9 @@
                     <li><a href="./base.html">&lt;base&gt;</a></li>
                     <li><a href="./bdi.html">&lt;bdi&gt;</a></li>
                     <li><a href="./bdo.html">&lt;bdo&gt;</a></li>
-                    <li><a href="./blockquote.html">&lt;blockquote&gt;</a></li>
+                    <hr>
+                    <li><a id="active" href="./blockquote.html">&lt;blockquote&gt;</a></li>
+                    <hr>
                     <li><a href="./body.html">&lt;body&gt;</a></li>
                     <li><a href="./br.html">&lt;br&gt;</a></li>
                     <li><a href="./button.html">&lt;button&gt;</a></li>
@@ -133,37 +133,32 @@
         </aside>
 
         <main>
-            <h1>&lt;&gt;</h1>
+            <h1>&lt;blockquote&gt;</h1>
 
-            <ul>
-                <li><a href=""></a></li>
-            </ul>
+            <p>
+                La etiqueta &lt;blockquote&gt; especifica una sección que se cita de otra fuente. Los navegadores suelen 
+                aplicarle sangría.
+            </p>
 
-            <p></p>
+            <p>Un consejo, utiliza &lt;q&gt; para citas en una línea breve.</p>
             
             <h3>Sintaxis</h3>
             <code>
-                <p class="tab1"></p>
-                <p class="tab2"></p>
-                <p class="tab3"></p>
+                <p class="tab1">&lt;blockquote cite="https://es.wikipedia.org/wiki/Windows_11"&gt;</p>
+                    <p class="tab2">
+                        Windows 11 es el nombre de la última y actual versión del sistema operativo Windows​ desarrollado por 
+                        Microsoft, además de ser el sucesor de la anterior versión del sistema operativo, Windows 10, 
+                        ​lanzado en 2015.
+                    </p>
+                <p class="tab1">&lt;/blockquote&gt;</p>
             </code>
 
-            <a name=""></a><h2></h2>
-            <div class="attribute">
-                
-            </div>
-
             <h3>Ejemplo</h3>
-
-            <table class="column">
-                <tr>
-                    <th></th>
-                </tr>
-
-                <tr>
-                    <td></td>
-                </tr>
-            </table>
+            <blockquote cite="https://es.wikipedia.org/wiki/Windows_11">
+                Windows 11 es el nombre de la última y actual versión del sistema operativo Windows​ desarrollado por 
+                Microsoft, además de ser el sucesor de la anterior versión del sistema operativo, Windows 10, 
+                lanzado en 2015.
+            </blockquote>
         </main>
     </body>
 </html>
