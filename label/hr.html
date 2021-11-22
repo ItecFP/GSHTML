@@ -9,7 +9,7 @@
         <meta name="author" content="David Pozo, Alberto Sánchez">
         <link rel="stylesheet" href="./../sources/css/estilos.css">
         <link rel="icon" href="./../sources/img/icon.png">
-        <title>&lt;blockquote&gt; HTML</title>
+        <title>&lt;hr&gt; HTML</title>
     </head>
 
     <body>
@@ -35,9 +35,7 @@
                     <li><a href="./base.html">&lt;base&gt;</a></li>
                     <li><a href="./bdi.html">&lt;bdi&gt;</a></li>
                     <li><a href="./bdo.html">&lt;bdo&gt;</a></li>
-                    <hr>
-                    <li><a id="active" href="./blockquote.html">&lt;blockquote&gt;</a></li>
-                    <hr>
+                    <li><a href="./blockquote.html">&lt;blockquote&gt;</a></li>
                     <li><a href="./body.html">&lt;body&gt;</a></li>
                     <li><a href="./br.html">&lt;br&gt;</a></li>
                     <li><a href="./button.html">&lt;button&gt;</a></li>
@@ -67,7 +65,9 @@
                     <li><a href="./h1.html">&lt;h1&gt;-&lt;h6&gt;</a></li>
                     <li><a href="./head.html">&lt;head&gt;</a></li>
                     <li><a href="./header.html">&lt;header&gt;</a></li>
-                    <li><a href="./hr.html">&lt;hr&gt;</a></li>
+                    <hr>
+                    <li><a id="active" href="./hr.html">&lt;hr&gt;</a></li>
+                    <hr>
                     <li><a href="./hmtl.html">&lt;html&gt;</a></li>
                     <li><a href="./i.html">&lt;i&gt;</a></li>
                     <li><a href="./iframe.html">&lt;iframe&gt;</a></li>
@@ -133,34 +133,30 @@
         </aside>
 
         <main>
-            <h1>&lt;blockquote&gt;</h1>
+            <h1>&lt;hr&gt;</h1>
 
-            <p>
-                La etiqueta &lt;blockquote&gt; especifica una sección que se cita de otra fuente. Los navegadores suelen 
-                aplicarle sangría.
-            </p>
-
-            <p>Para pequeñas citas dentro de un texto se recomienda la etiqueta <a class="tagref" href="./q.html">&lt;q&gt;</a>.</p>
+            <p>Esta etiqueta se utiliza para separar unos contenidos de otros, antes se utilizaba para dibujar una linea horizontal.</p>
             
             <h3>Sintaxis</h3>
             <code>
-                <p class="tab1">&lt;blockquote cite="https://es.wikipedia.org/wiki/Windows_11"&gt;</p>
-                    <p class="tab2">
-                        &lt;p&gt; Windows 11 es el nombre de la última y actual versión del sistema operativo Windows​ desarrollado por 
-                        Microsoft, además de ser el sucesor de la anterior versión del sistema operativo, Windows 10, 
-                        ​lanzado en 2015. &lt;p&gt;
-                    </p>
-                <p class="tab1">&lt;/blockquote&gt;</p>
+                <p class="tab1">&lt;p&gt;</p>
+                <p class="tab2">Este texto tiene correlación con el siguiente</p>
+                <p class="tab1">&lt;/p&gt;</p>
+                <p class="tab1">&lt;hr&gt;</p>
+                <p class="tab1">&lt;p&gt;</p>
+                <p class="tab2">pero siguen siendo cosas separadas.</p>
+                <p class="tab1">&lt;/p&gt;</p>
             </code>
 
             <h3>Ejemplo</h3>
-            <blockquote cite="https://es.wikipedia.org/wiki/Windows_11">
-                <p>
-                    Windows 11 es el nombre de la última y actual versión del sistema operativo Windows​ desarrollado por 
-                    Microsoft, además de ser el sucesor de la anterior versión del sistema operativo, Windows 10, 
-                    lanzado en 2015.
-                </p>
-            </blockquote>
+
+            <p>
+                Este texto tiene correlación con el siguiente
+            </p>
+            <hr>
+            <p>
+                pero siguen siendo cosas separadas.
+            </p>
         </main>
     </body>
 </html>

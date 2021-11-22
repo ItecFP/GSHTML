@@ -140,7 +140,7 @@
             </p>
 
             <p>
-                Esta etiqueta debe ir siempre dentro de la etiqueta <a href=./map.html>&lt;map&gt;</a> y acompañada de una <a href=./img.html>&lt;img&gt;</a>
+                Esta etiqueta debe ir siempre dentro de la etiqueta <a class="tagref" href=./map.html>&lt;map&gt;</a> y acompañada de una <a class="tagref" href=./img.html>&lt;img&gt;</a>
             </p>
 
             <h3>Sintaxis</h3>
@@ -155,13 +155,15 @@
             </code>
 
             <h3>Ejemplo</h3>
-            <img src="./../sources/img/planetas.gif" width="145" height="126" alt="Planets" usemap="#planetmap">
+            <p>
+                <img src="./../sources/img/planetas.gif" width="145" height="126" alt="Planets" usemap="#planetmap">
                 
-            <map name="planetmap"> 
-                <area shape="rect" coords="0,0,82,126" alt="Sun" href="https://es.wikipedia.org/wiki/Sol">
-                <area shape="circle" coords="90,58,3" alt="Mercury" href="https://es.wikipedia.org/wiki/Mercurio_(planeta)">
-                <area shape="circle" coords="124,58,8" alt="Venus" href="https://es.wikipedia.org/wiki/Venus_(planeta)">
-            </map>
+                <map name="planetmap"> 
+                    <area shape="rect" coords="0,0,82,126" alt="Sun" href="https://es.wikipedia.org/wiki/Sol" target="_blank">
+                    <area shape="circle" coords="90,58,3" alt="Mercury" href="https://es.wikipedia.org/wiki/Mercurio_(planeta)"target="_blank">
+                    <area shape="circle" coords="124,58,8" alt="Venus" href="https://es.wikipedia.org/wiki/Venus_(planeta)"target="_blank">
+                </map>
+            </p>
         </main>
     </body>
 </html>

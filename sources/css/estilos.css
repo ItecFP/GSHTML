@@ -122,6 +122,10 @@ main h4 {
     font-size: 18px;
 }
 
+main a.tagref {
+    color: #00aaff;
+}
+
 main ul {
     display: block;
     margin: 0 0 20px 20px;
