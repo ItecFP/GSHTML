@@ -7,8 +7,8 @@
 GENERAL ............... 15 - 29
 HEADER ................ 31 - 56
 NAV ................... 58 - 92
-MAIN .................. 94 - 183
-TABLAS ................ 185 - 215
+MAIN .................. 94 - 186
+TABLAS ................ 188 - 219
 
 */
 
@@ -55,7 +55,7 @@ header h1 {
 }
 /* HEADER */
 
-/* NAV Global */
+/* NAV */
 aside {
     position: fixed;
     width: 15%;
@@ -141,7 +141,7 @@ main ul li a {
 
 main p {
     display: block;
-    margin: 10px 0;
+    margin: 15px 0;
     text-align: justify;
 }
 
@@ -149,7 +149,6 @@ main aside {
     display: block;
     width: 100%;
 }
-
 
 main code {
     display: block;
@@ -188,6 +187,7 @@ main div.attribute a {
 
 /* TABLAS */
 table {
+    margin-bottom: 30px;
     width: 100%;
 }
 

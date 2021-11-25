@@ -149,50 +149,47 @@
             </nav>
             
             <p>
-                La etiqueta &lt;a&gt; define un hipervínculo, que se utiliza para vincular una página a otra.
+                La etiqueta &lt;a&gt; define un hipervínculo que se utiliza para vincular una página a otra.
             </p>
 
             <p>
-                El atributo más importante del elemento &lt;a&gt; es el atributo href="", que indica el destino del enlace.
+                El atributo más importante del elemento &lt;a&gt; es el atributo href, que indica el destino del enlace.
             </p>
 
             <a name="href"></a><h2>href</h2>
             <div class="attribute">
                 <p>
-                    El valor de href=" " da la ruta absoluta o relativa del archivo al que se realiza el hipervínculo.
+                    El valor del atributo href da la ruta absoluta o relativa del archivo al que se realiza el hipervínculo.
                 </p>
 
                 <h3>Sintaxis</h3>
-                <code>&lt;a href="./img/icone.png"&gt;Clik aquí para ver el icono&lt;/a&gt;</code>
+                <code>&lt;a href="./icon.png"&gt;&lt;/a&gt;</code>
 
                 <h3>Ejemplo</h3>
-                <a href="./../sources/img/iconoOriginal.png">Clik aquí para ver el icono</a>
+                <p><a href="./../sources/img/iconoOriginal.png" target="_blank">Click aquí para ver el icono</a></p>
             </div>
 
             <a name="hreflang"></a><h2>hreflang</h2>
             <div class="attribute">
                 <p>
-                    Indica el idioma del archivo o url del hipervínculo.
+                    El atributo hreflang Indica el idioma del archivo o url del hipervínculo.
                 </p>
 
                 <h3>Sintaxis</h3>
-                <code>&lt;a href="./pdf/English.pdf" hreflang="en"&gt;Clik aquí para ver el PDF&lt;/a&gt;</code>
+                <code>&lt;a href="./English.pdf" hreflang="en"&gt;&lt;/a&gt;</code>
 
                 <h3>Ejemplo</h3>
-                <a href="./../sources/pdf/English.pdf">Clik aquí para ver el PDF</a>
+                <p><a href="./../sources/pdf/English.pdf" target="_blank">Click aquí para ver el PDF</a></p>
             </div>
 
             <a name="media"></a><h2>media</h2>
             <div class="attribute">
                 <p>
-                    Este atributo especifica para qué medio o dispositivo está optimizado el documento vinculado. Este atributo se utiliza para especificar que la URL de destino está diseñada para dispositivos especiales (como iPhone), medios impresos o de voz.
+                    El atributo media especifica para qué medio o dispositivo está optimizado el documento vinculado. Este atributo se utiliza para especificar que la URL de destino está diseñada para dispositivos especiales (como iPhone), medios impresos o de voz.
                 </p>
 
-                <h3>Sintaxis</h3>
-                <code>&lt;a media="valor"&gt;&lt;/a&gt;</code>
-
                 <p>
-                    Este atributo puede aceptar los siguientes valores:                
+                    Este atributo es muy extenso, por lo tanto aqui tienes unas tablas para poder ver todos los posibles valores y como configurarlo de la forma mas óptima posible.              
                 </p>
 
                 <table class="column2">
@@ -201,7 +198,7 @@
                     </tr>
 
                     <tr>
-                        <th>media=" "</th>
+                        <th>Valor</th>
                         <th>Descripción</th>
                     </tr>
 
@@ -249,13 +246,15 @@
                         <td>tv</td>
                         <td>Dispositivos de tipo televisión (baja resolución, capacidad de desplazamiento limitada)</td>
                     </tr>
+                </table>
 
+                <table class="column2">
                     <tr>
-                        <th colspan="2">Valores</th>
+                        <th colspan="2">Condiciones</th>
                     </tr>
 
                     <tr>
-                        <th>media="valor"</th>
+                        <th>Valor</th>
                         <th>Descripción</th>
                     </tr>
 
@@ -323,13 +322,15 @@
                         <td>grid</td>
                         <td>Especifica si el dispositivo de salida es de cuadrícula o mapa de bits. Los valores posibles son "1" para la cuadrícula y "0" en caso contrario. <br> Ejemplo: media="handheld and (grid:1)"</td>
                     </tr>
+                </table>
 
+                <table class="column2">
                     <tr>
                         <th colspan="2">Operadores</th>
                     </tr>
 
                     <tr>
-                        <th>media="valor"</th>
+                        <th>Valor</th>
                         <th>Descripción</th>
                     </tr>
 
@@ -349,15 +350,17 @@
                     </tr>
                 </table>
 
+                <h3>Sintaxis</h3>
+                <code>&lt;a href="./index.html" media="all screen and (max-width: 800px)"&gt;&lt;/a&gt;</code>
+
                 <h3>Ejemplo</h3>
-                <code>&lt;a href="att_a_media.asp?output=print" media="print and (resolution:300dpi)"&gt;Abrir página de atributos para imprimir&lt;/a&gt;</code>
+                <a href="../index.html" target="_blank" media="all screen and (max-width: 800px)">Abre la página de Inicio indicandole que todas las pantallas son compatibles, inclusive las menores a 800px de ancho</a>
             </div>
 
             <a name="ping"></a><h2>ping</h2>
             <div class="attribute">
                 <p>
-                    El atributo ping especifica una lista de URLs que se notificarán si el usuario sigue el hipervínculo. 
-                    Cuando el usuario hace clic en el hipervínculo, el atributo ping enviará una breve solicitud HTTP POST a la URL especificada.
+                    El atributo ping especifica una lista de URLs que se notificarán si el usuario sigue el hipervínculo. Cuando el usuario hace click en el hipervínculo, el atributo ping enviará una breve solicitud HTTP POST a la URL especificada.
                 </p>
 
                 <p>
@@ -366,16 +369,16 @@
 
                 <h3>Sintaxis</h3>
                 <code>&lt;a href="./index.html" ping="./tracks.txt"&gt;&lt;/a&gt;</code>
+
+                <h3>Ejemplo</h3>
+                <p><a href="../index.html" target="_blank" ping="./tracks.txt">Manda la URL solicitada a tracks.txt</a></p>
             </div>
             
             <a name="referrerpolicy"></a><h2>referrerpolicy </h2>
             <div class="attribute">
                 <p>
-                   Este atributo especifica qué información de referencia enviar cuando el usuario hace clic en el hipervínculo.
+                   El atributo referrerpolicy especifica qué información de referencia se envía cuando el usuario hace click en el hipervínculo.
                 </p>
-
-                <h3>Sintaxis</h3>
-                <code>&lt;a referrerpolicy="valor"&gt;&lt;/a&gt;</code>
 
                 <p>
                     Este atributo puede aceptar los siguientes valores:                
@@ -383,7 +386,11 @@
 
                 <table class="column2">
                     <tr>
-                        <th>referrerpolicy="valor"</th>
+                        <th colspan="2">Valores</th>
+                    </tr>
+
+                    <tr>
+                        <th>Valor</th>
                         <th>Descripción</th>
                     </tr>
 
@@ -423,8 +430,11 @@
                     </tr>
                 </table>
 
+                <h3>Sintaxis</h3>
+                <code>&lt;a href="./index.html" referrerpolicy="no-referrer"&gt;&lt;/a&gt;</code>
+
                 <h3>Ejemplo</h3>
-                <code>&lt;a href="att_a_media.asp?output=print" media="print and (resolution:300dpi)"&gt;Abrir página de atributos para imprimir&lt;/a&gt;</code>
+                <p><a href="./index.html" target="_blank" referrerpolicy="no-referrer">Abre la página de Inicio sin hacer referencia a ninguna información.</a></p>
             </div>
 
             <a name="rel"></a><h2>rel</h2>
@@ -437,12 +447,13 @@
                     Los motores de búsqueda pueden utilizar este atributo para obtener más información sobre un enlace.
                 </p>
 
-                <h3>Sintaxis</h3>
-                <code>&lt;a rel="value"&gt;&lt;/a&gt;</code>
-
                 <table class=column2>
                     <tr>
-                        <th>rel="valor"</th>
+                        <th colspan="2">Valores</th>
+                    </tr>
+
+                    <tr>
+                        <th>Valor</th>
                         <th>Descripción</th>
                     </tr>
     
@@ -512,18 +523,22 @@
                     </tr>
                 </table>
 
+                <h3>Sintaxis</h3>
+                <code>&lt;a href="https://www.amazon.es/" rel="external"&gt;&lt;/a&gt;</code>
+
                 <h3>Ejemplo</h3>
-                <a href="../index.html" rel="prev">Abre la página de Inicio con el valor prev</a>
+                <p><a href="https://www.amazon.es/" target="_blank" rel="external">Abre la página de Amazon indicando que es un enlace externo</a></p>
             </div>
 
             <a name="target"></a><h2>target</h2>
             <div class="attribute">
                 <p>
-                    El atributo target especifica dónde abrir el documento vinculado.
+                    El atributo target especifica como abrir el documento vinculado.
                 </p>
 
-                <h3>Sintaxis</h3>
-                <code>&lt;a href="./index.html target="_blank"&gt;&lt;/a&gt;</code>
+                <p>
+                    Puede tener los siguientes valores:
+                </p>
 
                 <table class="column2">
                     <tr>
@@ -531,7 +546,7 @@
                     </tr>
 
                     <tr>
-                        <th>target="valor"</th>
+                        <th>Valor</th>
                         <th>Descripción</th>
                     </tr>
 
@@ -554,33 +569,32 @@
                         <td>_top</td>
                         <td>Abre la página vinculada en todo el cuerpo de la ventana o pestaña</td>
                     </tr>
-
-                    <tr>
-                        <td>framename</td>
-                        <td>Abre la página vinculada en un iframe</td>
-                    </tr>
                 </table>
 
+                <h3>Sintaxis</h3>
+                <code>&lt;a href="./index.html target="_blank"&gt;&lt;/a&gt;</code>
+
                 <h3>Ejemplo</h3>
-                <a href="../index.html" target="_blank">Abre la página de Inicio en una nueva ventana</a>
+                <p><a href="../index.html" target="_blank">Abre la página de Inicio en una nueva pestaña</a></p>
             </div>
 
             <a name="type"></a><h2>type</h2>
             <div class="attribute">
                 <p>
-                    Este atributo se usa para indicar el tipo de archivo vinculado.
+                    El atributo type se usa para indicar el tipo de archivo vinculado.
                 </p>
 
-                <h3>Sintaxis</h3>
-                <code>&lt;a href="https://www.GSHTML.com" type="text/html">GSHTML&gt;&lt;/a&gt;</code>
-
                 <p>
-                    Aqui tienes una tabla de los tipos de archivo más usados:
+                    A continuación dejamos una tabla con unos pocos de ejemplos de los tipos de archivo más usados:
                 </p>
 
                 <table class="column2">
                     <tr>
-                        <th>type="valor"</th>
+                        <th colspan="2">Valores</th>
+                    </tr>
+
+                    <tr>
+                        <th>Valor</th>
                         <th>Tipo de archivo</th>
                     </tr>
     
@@ -604,6 +618,12 @@
                         <td>Imagen PNG</td>
                     </tr>
                 </table>
+
+                <h3>Sintaxis</h3>
+                <code>&lt;a href="./index.html" type="text/html">&gt;&lt;/a&gt;</code>
+
+                <h3>Ejemplo</h3>
+                <a href="../index.html" type="text/html">Abre la página de Inicio indicando que es código html</a>
             </div>
         </main>
     </body>

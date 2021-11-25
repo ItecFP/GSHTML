@@ -140,27 +140,20 @@
                     <li><a href="#href">href</a></li>
                     <li><a href="#target">target</a></li>
                 </ul>
-            </nav> 
+            </nav>
+
             <p>
-                La etiqueta &lt;base&gt; especifica la URL base y/o el destino para todas las URL relativas en un documento.
-                La etiqueta &lt;base&gt; debe tener un href o un atributo de destino presente, o ambos.
+                La etiqueta &lt;base&gt; especifica la URL base y/o el destino para todas las URL relativas en un documento, debe tener al menos un atributo href.
             </p>
 
             <p>
                 Solo puede haber un único elemento &lt;base&gt; en el documento y debe estar dentro del <a class="tagref" href="./head.html">&lt;head&gt;</a>.
             </p>
-            
-            <h3>Sintaxis</h3>
-            <code>
-                <p class="tab1">&lt;head&gt;</p>
-                    <p class="tab2">&lt;base href="hhtps://www.GSHTML.com/" target="_blank"&gt;</p>
-                <p class="tab1">&lt;/head&gt;</p>
-            </code>
 
             <a name="href"></a><h2>href</h2>
             <div class="attribute">
                 <p>
-                    El valor de href="" da la ruta absoluta o relativa del archivo al que se realiza el hipervínculo.
+                    El valor del atributo href da la ruta absoluta o relativa del archivo al que se realiza el hipervínculo.
                 </p>
 
                 <h3>Sintaxis</h3>
@@ -182,7 +175,7 @@
                     </tr>
 
                     <tr>
-                        <th>target="valor"</th>
+                        <th>Valor</th>
                         <th>Descripción</th>
                     </tr>
 
@@ -207,6 +200,13 @@
                     </tr>
                 </table>
             </div>
+
+            <h3>Sintaxis</h3>
+            <code>
+                <p class="tab1">&lt;head&gt;</p>
+                    <p class="tab2">&lt;base href="./index" target="_blank"&gt;</p>
+                <p class="tab1">&lt;/head&gt;</p>
+            </code>
         </main>
     </body>
 </html>
