@@ -9,7 +9,7 @@
         <meta name="author" content="David Pozo, Alberto Sánchez">
         <link rel="stylesheet" href="./../sources/css/estilos.css">
         <link rel="icon" href="./../sources/img/icon.png">
-        <title>&lt;br&gt; HTML</title>
+        <title>&lt;button&gt; HTML</title>
     </head>
 
     <body>
@@ -37,10 +37,10 @@
                     <li><a href="./bdo.html">&lt;bdo&gt;</a></li>
                     <li><a href="./blockquote.html">&lt;blockquote&gt;</a></li>
                     <li><a href="./body.html">&lt;body&gt;</a></li>
+                    <li><a href="./br.html">&lt;br&gt;</a></li>
                     <hr>
-                    <li><a id="active" href="./br.html">&lt;br&gt;</a></li>
+                    <li><a id="active" href="./button.html">&lt;button&gt;</a></li>
                     <hr>
-                    <li><a href="./button.html">&lt;button&gt;</a></li>
                     <li><a href="./canvas.html">&lt;canvas&gt;</a></li>
                     <li><a href="./caption.html">&lt;caption&gt;</a></li>
                     <li><a href="./cite.html">&lt;cite&gt;</a></li>
@@ -133,39 +133,51 @@
         </aside>
 
         <main>
-            <h1>&lt;br&gt;</h1>
+            <h1>&lt;button&gt;</h1>
+
+            <ul>
+                <li><a href="">autofocus</a></li>
+                <li><a href="">disabled</a></li>
+                <li><a href="">form</a></li>
+                <li><a href="">formaction</a></li>
+                <li><a href="">formenctype</a></li>
+                <li><a href="">formmethod</a></li>
+                <li><a href="">formnovalidate</a></li>
+                <li><a href="">formtarget</a></li>
+                <li><a href="">name</a></li>
+                <li><a href="">type</a></li>
+                <li><a href="">value</a></li>
+            </ul>
 
             <p>
-                Esta etiqueta se utiliza para introducir un salto de línea.
+                Esta etiqueta define un botón en el que se puede hacer clic, se pueden añadir, textos u otras etiquetas como <a class="tagref" href="./img.html">&lt;img&gt;</a>, <a class="tagref" href="./p.html">&lt;p&gt;</a>, <a class="tagref" href=".b/.html">&lt;b&gt;</a>... 
             </p>
-            
+
             <h3>Sintaxis</h3>
             <code>
-                &lt;p&gt;Esta etiqueta no es recomendable&lt;br&gt;ya que existen mejores formas de estructurar una página.&lt;/p&gt;
+                <p class="tab1"></p>
+                <p class="tab2"></p>
+                <p class="tab3"></p>
             </code>
 
             <h3>Ejemplo</h3>
-            <p>
-                Esta etiqueta no es recomendable<br>
-                ya que existen mejores formas de estructurar una página.
-            </p>
 
-            <p>
-                Una mejor forma de estructura sería crear varios parrafos (<a class="tagref" href="./p.html">&lt;p&gt;</a>), si queremos que esten representados dentro de una misma estructura podemos usar un <a class="tagref" href="./div.html">&lt;div&gt;</a>
-            </p>
+            <button type="button">¡Clikeame!</button>
 
-            <h3>Sintaxis</h3>
-            <code>
-                <p class="tab1">&lt;div&gt;</p>
-                <p class="tab2">&lt;p&gt;</p>
-                <p class="tab3">Esta es una forma semantica</p>
-                <p class="tab2">&lt;/p&gt;</p>
-                <p class="tab2">&lt;p&gt;</p>
-                <p class="tab3">de introducir un salto de linea</p>
-                <p class="tab2">&lt;/p&gt;</p>
-                <p class="tab1">&lt;/div&gt;</p>
-            </code>
+            <a name=""></a><h2></h2>
+            <div class="attribute">
+                
+            </div>
 
+            <table class="column">
+                <tr>
+                    <th></th>
+                </tr>
+
+                <tr>
+                    <td></td>
+                </tr>
+            </table>
         </main>
     </body>
 </html>
