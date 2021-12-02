@@ -35,8 +35,6 @@ header {
     width: 100%;
     align-items: center;
     background-color: rgb(60, 60, 70);
-    position: sticky;
-    top: 0;
 }
 
 header a {
