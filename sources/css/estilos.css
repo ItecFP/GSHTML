@@ -184,16 +184,36 @@ main div.attribute a {
 /* MAIN */
 
 /* TABLAS */
-table {
+table.column2 {
     margin-bottom: 30px;
     width: 100%;
 }
 
-th {
-    font-size: 18px;
-    text-align: center;
+table.column3 {
+    margin-bottom: 30px;
+    width: 100%;
 }
- 
+
+table.column4 {
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+th.column2 {
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+th.column3 {
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+th.column4 {
+    margin-bottom: 30px;
+    width: 100%;
+}
+
 table.column2 th, table.column2 td {
     padding: 12px 8px;
     width: calc(100% / 2);
@@ -215,3 +235,7 @@ table.column4 th, table.column4 td {
     border: 2px solid #444;
 }
 /* TABLAS */
+
+div.ejemplo {
+    all: initial;
+}
