@@ -148,7 +148,7 @@ main aside {
     width: 100%;
 }
 
-main code {
+main code.code {
     display: block;
     margin: 10px 0;
     padding: 20px;
@@ -184,6 +184,16 @@ main div.attribute a {
 /* MAIN */
 
 /* TABLAS */
+
+table.ejemplo th, table.ejemplo td {
+    width: calc(100% / 2);
+    vertical-align: center;
+}
+
+table.ejemplo td code {
+    all:none;
+}
+
 table.column2 {
     margin-bottom: 30px;
     width: 100%;
@@ -238,4 +248,8 @@ table.column4 th, table.column4 td {
 
 div.ejemplo {
     all: initial;
+}
+
+main *.ejemplo{
+    all:none;
 }
