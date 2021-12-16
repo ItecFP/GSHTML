@@ -54,37 +54,43 @@ header h1 {
 /* HEADER */
 
 /* NAV */
-aside {
+.aside {
     position: fixed;
     width: 15%;
     height: 89%;
     overflow: auto;
+    transition: all linear 0.2s;
     background-color: rgb(40, 40, 50);
 }
 
-aside nav {
+.aside .aside-fixed {
+    height: 100%;
+    top: 0;
+}
+
+.aside nav {
     display: block;
 }
 
-aside nav ul {
+.aside nav ul {
     display: block;
 }
 
-aside nav ul hr {
+.aside nav ul hr {
     display: block;
     background-color: #dddddd;
 }
 
-aside nav ul li a {
+.aside nav ul li a {
     display: block;
     padding: 8px 0px 8px 16px;
 }
 
-aside nav ul li a#active {
+.aside nav ul li a#active {
     background-color: rgb(60, 60, 70);
 }
 
-aside nav ul li a:hover:not(#active) {
+.aside nav ul li a:hover:not(#active) {
     background-color: rgb(60, 60, 70);
 }
 /* NAV */
