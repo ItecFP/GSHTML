@@ -18,14 +18,27 @@
         <header>
             <a href="./index.html"><img src="./sources/img/iconoOriginal.png" alt="Logo GUIA SUPREMA"></a>
             <h1>Guia Suprema de HTML</h1>
+            <form action="../../form-result.php" method="post" target="_blank">
+
+                <p>
+              
+                  Busqueda: <input type="search" name="busquedamodelos" list="listamodelos">
+              
+                  <input type="submit" value="Buscar">
+                </p>
+              </form>
+              <datalist id="listamodelos">
+                <option value="Camaro">
+                <option value="Corvette">
+                <option value="Impala">
+                <option value="Colorado">
+              </datalist>
         </header>
 
         <aside class="menu">
             <nav>
                 <ul>
-                    <hr>
                     <li><a id="active" href="./index.html">Inicio</a></li>
-                    <hr>
                     <li><a href="./label/comments.html">&lt;!-- --&gt;</a></li>
                     <li><a href="./label/doctype.html">&lt;!DOCTYPE&gt;</a></li>
                     <li><a href="./label/a.html">&lt;a&gt;</a></li>

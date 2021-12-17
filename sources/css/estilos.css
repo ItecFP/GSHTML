@@ -6,9 +6,9 @@
 
 GENERAL ............... 15 - 29
 HEADER ................ 31 - 56
-NAV ................... 58 - 92
-MAIN .................. 94 - 186
-TABLAS ................ 188 - 219
+NAV ................... 58 - 97
+MAIN .................. 99 - 209
+TABLAS ................ 211 - 272
 
 */
 
@@ -87,6 +87,8 @@ header h1 {
 
 .menu nav ul li a#active {
     background-color: rgb(60, 60, 70);
+    border: 1px #dddddd;
+    border-style: solid none solid none;
 }
 
 .menu nav ul li a:hover:not(#active) {
@@ -174,6 +176,21 @@ main code p.tab2 {
 main code p.tab3 {
     display: block;
     margin: 5px 60px;
+}
+
+main samp {
+    display: block;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(200, 200, 200);
+}
+
+main samp *{
+    color: rgb(0, 0, 0);
+    margin: 0;
+	padding: 0;
+	outline: none;
 }
 
 main div.attribute {
