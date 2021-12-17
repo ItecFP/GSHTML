@@ -75,11 +75,6 @@ header h1 {
     display: block;
 }
 
-.menu nav ul hr {
-    display: block;
-    background-color: #dddddd;
-}
-
 .menu nav ul li a {
     display: block;
     padding: 8px 0px 8px 16px;

@@ -1,0 +1,5 @@
+Ideas:
+    Creación de un buscador
+
+Faltas:
+    Etiqueta button incompleta
